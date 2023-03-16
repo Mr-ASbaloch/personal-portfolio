@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body {
-  font-family: Arial, Helvetica, sans-serif ;
+  font-family: Arial, Helvetica, sans-serif;
 }
 * {
   padding: 0;
@@ -9,9 +9,10 @@ body {
 }
 body {
   padding: auto;
-  margin: 0px 7%;
-  background-color: #40513B;
-  color:white;
+  margin: 0px 10%;
+  /* background-color: #40513B; */
+  background-color: lightgray;
+  color: black;
   /* border: 1px solid black; */
 }
 .section {
@@ -37,7 +38,7 @@ body {
 .home-cont h1 {
   margin: 0.5rem;
   font-size: 2rem;
-  color: #FDD36A;
+  color: blue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   animation: typing 1.5s steps(10);
 }
@@ -52,7 +53,7 @@ body {
   text-decoration: none;
   padding: 5px;
   margin: 5px;
-  color: white;
+  color: blue;
   border: 1px solid black;
   background: transparent;
   border-radius: 50%;
@@ -60,12 +61,12 @@ body {
   font-size: 1.1rem;
   margin-top: 2.5rem;
   justify-content: center;
-  box-shadow: 0 0.1rem 0.3rem #FDD36A;
+  box-shadow: 0 0.1rem 0.3rem blue;
   transition: 0.7s ease;
 }
 .social a:hover {
-  background-color:#FDD36A;
-  color:black;
+  background-color: white;
+  color: black;
   padding: 12px;
 }
 
@@ -81,7 +82,7 @@ body {
   pointer-events: none;
 }
 .home .profession-container .profession-box {
-  background-color: #FDD36A;
+  background-color: blue;
   position: absolute;
   border-radius: 50%;
   width: 700px;
@@ -128,43 +129,169 @@ border-bottom:  320px solid blue ;
   margin: auto;
 }
 
-
-
 /* about section*/
 
-.about{
-  display:flex;
+.about {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
   margin-bottom: 10px;
-
 }
-.about img{
+.about img {
   width: 450px;
   height: 50%;
- border-radius: 10%;
- opacity: 0.7;
+  border-radius: 10%;
+  opacity: 0.7;
+  transition: 0.5s ease;
 }
-.about img:hover{
-  opacity:1;
+.about img:hover {
+  opacity: 1;
   cursor: pointer;
+  transform: scale(0.9);
 }
-.about h2,h3,a{
-  color:white;
-  font-family:Arial, Helvetica, sans-serif;
- padding: 0px 20px;
+.about h2,
+h3,
+a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 20px;
 }
-.about h2{
-  text-decoration: underline;
+.about h2 {
+  text-decoration: underline black;
   margin: 10px auto;
 }
-.about span{
-  color: fuchsia;
+.about span {
+  color: blue;
 }
-.about a{
-  color:aqua;
-  display: block;
+.about a {
+  color: aqua;
+  display: inline-block;
   margin-top: 10px;
+  text-decoration: none;
+  width: 17%;
+  height: 35px;
+  border: 1px solid rebeccapurple;
+  background-color: blue;
+  padding: 5px;
+  text-align: center;
+  margin: 18px;
+  color: white;
+  box-shadow: 0 5px 5px blue;
+}
+.about a:hover {
+  background: transparent;
+  color: black;
 }
 
+/* /* services.section  */
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.services h1 {
+  text-align: center;
+  margin: 3rem auto;
+  text-decoration: underline double black;
+  overflow-x: hidden;
+}
+.services span {
+  color: blue;
+}
+.services-box {
+  flex: 1 1 10rem;
+  padding: 3rem 2rem 5rem;
+  border: 0.1rem solid ghostwhite;
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 0.5rem ghostwhite;
+  transition: 0.7s ease-out;
+
+  margin-bottom: 0px;
+}
+.services-box:hover {
+  transform: scale(1.1);
+}
+.services-box h2 {
+  text-align: center;
+  margin: 0.5rem auto;
+  color: blue;
+}
+.services-box a {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+  background-color: blue;
+  border: 1px solid black;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  margin-left: 4rem;
+  overflow: none;
+  margin-top: 1.4rem;
+
+  box-sizing: border-box;
+}
+.services-box p {
+  text-align: justify;
+  font-size: 1rem;
+}
+.services-box a:hover {
+  background: transparent;
+  color: black;
+}
+
+/* contact section  */
+
+.contact h1 {
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: underline black;
+}
+.contact span {
+  color: blue;
+}
+.contact form {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+
+.contact form .contact-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-box input {
+  width: 25%;
+  margin: 0.2rem auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+}
+.contact form textarea {
+  width: 50%;
+  margin-top: 1.8rem;
+  padding: 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  color: black;
+  resize: none;
+  background: transparent;
+}
+.contact form .btn {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  background-color: blue;
+  color: white;
+  border-radius: 1.2rem;
+  padding: 0.5rem;
+}
